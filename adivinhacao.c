@@ -74,17 +74,17 @@ int main() // Declaração da função principal.
     {
         printf("\nVoce nao conseguiu adivinhar o numero secreto. Ele era o numero %d!\n", num_random); // Mensagem caso o jogador não consiga adivinhar o número secreto.
 
-        if (score < 0)
+        if (score < 0) // Caso a pontuação seja inferior a 0, exibir mensagem.
         {
             printf("A sua pontuacao foi 0.0!\n");
         }
         else
         {
-            printf("A sua pontuacao foi %.1f!\n", score);
+            printf("A sua pontuacao foi %.1f!\n", score); // Caso seja superior a 0, exibir mensagem.
         }
     }
 
-    system("\npause");
+    system("\npause"); // Aguardar comando do usuário para encerrar o programa.
 
     return 0;
 }
